@@ -14,19 +14,19 @@
 
 ## Screenshots
 
-![Hero](docs/screenshots/1.png)
+![Hero](public/screenshots/1.png)
 
 | Live Analysis | Capabilities & Results |
 |---|---|
-| ![Live Demo](docs/screenshots/2.png) | ![Capabilities](docs/screenshots/3.png) |
+| ![Live Demo](public/screenshots/2.png) | ![Capabilities](public/screenshots/3.png) |
 
 | Architecture Pipeline | Edge Optimization & Streaming |
 |---|---|
-| ![Architecture](docs/screenshots/4.png) | ![Edge Pipeline](docs/screenshots/5.png) |
+| ![Architecture](public/screenshots/4.png) | ![Edge Pipeline](public/screenshots/5.png) |
 
-![Deployment Stack](docs/screenshots/6.png)
+![Deployment Stack](public/screenshots/6.png)
 
-!(docs/screenshots/7.png)
+![Deployment Stack 2](public/screenshots/7.png)
 
 ## Overview
 
