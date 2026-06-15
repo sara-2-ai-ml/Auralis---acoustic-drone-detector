@@ -1,26 +1,119 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-base: var(--bg-base);
+  --color-surface: var(--bg-surface);
+  --color-text: var(--text-primary);
+  --color-muted: var(--text-muted);
+
+  --font-display: var(--font-space-grotesk), system-ui, sans-serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), "Courier New", monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Dark theme (default) */
+:root,
+[data-theme="dark"] {
+  --bg-base: #08090c;
+  --bg-surface: #1a1d24;
+  --bg-elevated: #08090c;
+  --bg-surface-alt: #1a1d24;
+  --text-primary: #e8e6e1;
+  --text-muted: #6b7280;
+  --text-nav: #9ca3af;
+  --border: rgba(107, 114, 128, 0.22);
+  --border-subtle: rgba(107, 114, 128, 0.12);
+  --cta-bg: #e8e6e1;
+  --cta-text: #08090c;
+  --nav-bg: rgba(8, 9, 12, 0.72);
+  --icon-bg: rgba(232, 230, 225, 0.06);
+  --tag-bg: rgba(232, 230, 225, 0.05);
+  --chart-bg: #1a1d24;
+  --chart-line: #e8e6e1;
+  --hero-overlay: linear-gradient(
+    to right,
+    rgba(8, 9, 12, 0.98) 0%,
+    rgba(8, 9, 12, 0.55) 40%,
+    rgba(8, 9, 12, 0.12) 100%
+  );
+  --logo-bg: #e8e6e1;
+  --logo-fg: #08090c;
+  --selection-bg: rgba(232, 230, 225, 0.15);
+  --focus-outline: #e8e6e1;
+  --overlay-bg: rgba(8, 9, 12, 0.82);
+  --canvas-bar: 232, 230, 225;
+}
+
+/* Light theme */
+[data-theme="light"] {
+  --bg-base: #f4f3ef;
+  --bg-surface: #ffffff;
+  --bg-elevated: #f4f3ef;
+  --bg-surface-alt: #eae8e3;
+  --text-primary: #0f1117;
+  --text-muted: #6b7280;
+  --text-nav: #4b5563;
+  --border: rgba(15, 17, 23, 0.12);
+  --border-subtle: rgba(15, 17, 23, 0.08);
+  --cta-bg: #0f1117;
+  --cta-text: #f4f3ef;
+  --nav-bg: rgba(244, 243, 239, 0.88);
+  --icon-bg: rgba(15, 17, 23, 0.05);
+  --tag-bg: rgba(15, 17, 23, 0.04);
+  --chart-bg: #ffffff;
+  --chart-line: #0f1117;
+  --hero-overlay: linear-gradient(
+    to right,
+    rgba(244, 243, 239, 0.98) 0%,
+    rgba(244, 243, 239, 0.6) 40%,
+    rgba(244, 243, 239, 0.15) 100%
+  );
+  --logo-bg: #0f1117;
+  --logo-fg: #f4f3ef;
+  --selection-bg: rgba(15, 17, 23, 0.1);
+  --focus-outline: #0f1117;
+  --overlay-bg: rgba(244, 243, 239, 0.88);
+  --canvas-bar: 15, 17, 23;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-outline);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+::selection {
+  background-color: var(--selection-bg);
+}
+
+.hairline {
+  border-color: var(--border);
 }

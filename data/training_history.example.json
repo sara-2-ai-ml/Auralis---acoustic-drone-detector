@@ -1,0 +1,7 @@
+{
+  "test_f1_macro": 0.94,
+  "f1_detail": "macro avg, held-out test set",
+  "validation_accuracy": [0.71, 0.78, 0.84, 0.88, 0.91, 0.92, 0.93, 0.94],
+  "training_audio_hours": 47,
+  "training_audio_detail": "UAV + ambient + augmented"
+}

@@ -1,0 +1,4 @@
+[
+  { "path": "public/test_drone.wav", "label": 1 },
+  { "path": "public/test_nodrone.wav", "label": 0 }
+]

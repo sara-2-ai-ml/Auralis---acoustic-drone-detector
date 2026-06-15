@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#1a1d24"/>
+  <rect x="1" y="1" width="1918" height="1078" fill="none" stroke="#6b7280" stroke-opacity="0.35"/>
+  <g opacity="0.25">
+    <rect x="80" y="200" width="12" height="680" fill="#e8e6e1"/>
+    <rect x="100" y="320" width="12" height="560" fill="#e8e6e1"/>
+    <rect x="120" y="180" width="12" height="700" fill="#e8e6e1"/>
+    <rect x="140" y="400" width="12" height="480" fill="#e8e6e1"/>
+    <rect x="160" y="250" width="12" height="630" fill="#e8e6e1"/>
+    <rect x="180" y="350" width="12" height="530" fill="#e8e6e1"/>
+    <rect x="200" y="150" width="12" height="730" fill="#e8e6e1"/>
+    <rect x="220" y="420" width="12" height="460" fill="#e8e6e1"/>
+    <rect x="240" y="280" width="12" height="600" fill="#e8e6e1"/>
+    <rect x="260" y="380" width="12" height="500" fill="#e8e6e1"/>
+    <rect x="280" y="220" width="12" height="660" fill="#e8e6e1"/>
+    <rect x="300" y="340" width="12" height="540" fill="#e8e6e1"/>
+  </g>
+  <text x="960" y="540" text-anchor="middle" fill="#6b7280" font-family="monospace" font-size="28">[spectrogram placeholder]</text>
+</svg>

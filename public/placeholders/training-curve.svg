@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="60" viewBox="0 0 160 60">
+  <rect width="160" height="60" fill="#1a1d24"/>
+  <rect x="0.5" y="0.5" width="159" height="59" fill="none" stroke="#6b7280" stroke-opacity="0.4"/>
+  <polyline points="8,48 28,38 48,42 68,22 88,28 108,18 128,24 152,12" fill="none" stroke="#6b7280" stroke-width="1.5" stroke-opacity="0.6"/>
+  <text x="80" y="34" text-anchor="middle" fill="#6b7280" font-family="monospace" font-size="8">[training curve]</text>
+</svg>

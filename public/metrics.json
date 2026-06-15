@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-06-13T12:00:00.000000+00:00",
+  "platform": {
+    "system": "Windows",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "provider": "ONNX Runtime CPUExecutionProvider"
+  },
+  "f1_score": {
+    "value": 0.99,
+    "source": "held-out test set",
+    "detail": "macro avg, held-out test set (45,327 chunks)"
+  },
+  "validation_accuracy": null,
+  "latency_ms": {
+    "value": 0.12,
+    "detail": "ONNX Runtime fp32, CPU (model.onnx)",
+    "breakdown": {
+      "inference_ms": { "mean": 0.12, "p50": 0.12, "p95": 0.15 },
+      "pipeline_ms": { "mean": 0.12, "p50": 0.12, "p95": 0.15 }
+    }
+  },
+  "model_size_mb": {
+    "value": 1.1,
+    "fp32_mb": 1.1,
+    "quant_mb": 0.28,
+    "detail": "model.onnx (fp32) — quantized 288KB available",
+    "compression_ratio": 3.89
+  },
+  "training_data": {
+    "value": 305,
+    "unit": "K",
+    "detail": "mel-spectrogram chunks, 180K source clips (DADS)"
+  },
+  "evaluation": null
+}
