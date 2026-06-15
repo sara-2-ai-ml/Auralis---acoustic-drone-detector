@@ -2,7 +2,7 @@
 
 **Real-time UAV detection from audio using a lightweight CNN, optimized for edge deployment.**
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-e8e6e1?style=flat-square)](https://your-project.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-e8e6e1?style=flat-square)](https://auralis-acoustic-drone-detector.vercel.app/)
 [![Model](https://img.shields.io/badge/Model-ONNX-6b7280?style=flat-square)](#model--export)
 [![License](https://img.shields.io/badge/License-MIT-6b7280?style=flat-square)](#license)
 
@@ -14,17 +14,20 @@
 
 ## Screenshots
 
-![Hero](docs/screenshots/Screenshot%202026-06-15%20033309.png)
+![Hero](docs/screenshots/1.png)
 
 | Live Analysis | Capabilities & Results |
 |---|---|
-| ![Live Demo](docs/screenshots/Screenshot%202026-06-15%20033538.png) | ![Capabilities](docs/screenshots/Screenshot%202026-06-15%20033331.png) |
+| ![Live Demo](docs/screenshots/2.png) | ![Capabilities](docs/screenshots/3.png) |
 
 | Architecture Pipeline | Edge Optimization & Streaming |
 |---|---|
-| ![Architecture](docs/screenshots/Screenshot%202026-06-15%20033619.png) | ![Edge Pipeline](docs/screenshots/Screenshot%202026-06-15%20033402.png) |
+| ![Architecture](docs/screenshots/4.png) | ![Edge Pipeline](docs/screenshots/5.png) |
 
-![Deployment Stack](docs/screenshots/Screenshot%202026-06-15%20033633.png)
+![Deployment Stack](docs/screenshots/6.png)
+
+!(docs/screenshots/7.png)
+
 ## Overview
 
 This project is an end-to-end acoustic drone detection pipeline: from raw audio to a deployable, edge-optimized model with a working web demo. It was built to demonstrate practical skills in **audio ML, signal processing, model optimization, and full-stack deployment** — not just a notebook that stops at `model.fit()`.
